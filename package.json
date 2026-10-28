@@ -1,0 +1,10 @@
+{
+  "name": "subforge-local-recovered",
+  "version": "2.15.14",
+  "private": true,
+  "description": "Recovered desktop application with local AI adapters",
+  "main": "desktop/local-main.js",
+  "devDependencies": {
+    "electron": "30.5.1"
+  }
+}

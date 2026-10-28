@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SubForge Pro</title>
+<style>
+  /* MÀN KHỞI ĐỘNG DUY NHẤT của app — cửa sổ NHỎ, không viền, bo góc, nằm giữa màn hình (kiểu các app desktop; người dùng
+     07-10-2026 chê bản cửa sổ to bằng app "không cân đối"). main.js đẩy trạng thái qua ``window.datTrangThai({buoc, mo_ta})``:
+       bước 1 "Khởi động dịch vụ xử lý" — backend Python đang lên (tới khi có port.json, 10–30 s lần đầu);
+       bước 2 "Tải giao diện"           — cửa sổ thật nạp trang + kiểm tra bản quyền; React vẽ xong → main đóng màn này.
+     Cỡ cửa sổ = KHUNG_KHOI_DONG trong main.js (460×384). Chủ đề: ``?theme=dark``; ``?v=`` = phiên bản. Token màu chép từ index.css.
+     Nút × (no-drag) đóng app khi backend chưa lên. Màn chờ của React (App.tsx) nằm dưới cửa sổ thật ẩn, không ai thấy. */
+  :root { --bg: #ffffff; --fg: #171717; --muted: #737373; --border: rgba(0,0,0,.08); --line: rgba(0,0,0,.07);
+          --primary: #7c3aed; --xong: #10b981; --soft: rgba(124,58,237,.08); }
+  html.dark { --bg: #121212; --fg: #fafafa; --muted: #a3a3a3; --border: rgba(255,255,255,.1); --line: rgba(255,255,255,.08); --soft: rgba(124,58,237,.16); }
+  html, body { height: 100%; margin: 0; background: var(--bg); overflow: hidden; user-select: none;
+    font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif; color: var(--fg); }
+  /* Cửa sổ ĐỤC (không transparent) — Windows 11 tự bo góc cửa sổ không viền. KHÔNG có vùng kéo (-webkit-app-region: drag)
+     ở bất kỳ đâu: bản 10:58 (08-10-2026) để cả thẻ là vùng kéo thì nút × không nhận cú bấm (hit-test của Windows trả về
+     "thanh tiêu đề" trước khi tới trang). Màn này chỉ hiện vài giây, không cần kéo. */
+  .the { position: relative; box-sizing: border-box; height: 100%; display: flex; flex-direction: column;
+    background: var(--bg); overflow: hidden; -webkit-app-region: no-drag; animation: hien .35s ease-out both; }
+  .nen { position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(420px 220px at 50% -40px, var(--soft), transparent 70%); }
+  .dong { position: absolute; top: 10px; right: 10px; z-index: 5; width: 32px; height: 32px; border: 0; border-radius: 8px; background: transparent;
+    color: var(--muted); font-size: 16px; line-height: 32px; text-align: center; cursor: pointer; -webkit-app-region: no-drag; }
+  .dong:hover { background: var(--line); color: var(--fg); }
+  .dau { position: relative; display: flex; flex-direction: column; align-items: center; padding: 44px 36px 0; gap: 14px; }
+  .logo { width: 72px; height: 72px; border-radius: 20px; display: block; object-fit: cover;
+    box-shadow: 0 12px 28px -10px rgba(124,58,237,.55); }
+  h1 { margin: 0; font-size: 20px; line-height: 1; font-weight: 700; letter-spacing: -.01em; }
+  .pb { font-size: 11px; color: var(--muted); margin-top: -8px; min-height: 14px; }
+  .buoc { position: relative; margin: 30px 36px 0; display: flex; flex-direction: column; gap: 10px; }
+  .b { display: flex; align-items: center; gap: 12px; height: 36px; padding: 0 12px; border-radius: 10px; font-size: 13px; color: var(--muted); }
+  .b .so { width: 22px; height: 22px; border-radius: 9999px; display: grid; place-items: center; font-size: 11px; font-weight: 600;
+    border: 1.5px solid var(--border); color: var(--muted); flex: none; }
+  .b .ten { flex: 1; }
+  .b .tt { font-size: 11px; color: var(--muted); }
+  .b.dang { background: var(--soft); color: var(--fg); font-weight: 600; }
+  .b.dang .so { border-color: var(--primary); background: var(--primary); color: #fff; }
+  .b.dang .tt { color: var(--primary); font-weight: 500; }
+  .b.xong { color: var(--fg); }
+  .b.xong .so { border-color: var(--xong); background: var(--xong); color: #fff; }
+  .b.xong .tt { color: var(--xong); }
+  .quay { width: 12px; height: 12px; border-radius: 9999px; border: 2px solid rgba(255,255,255,.45); border-top-color: #fff; animation: xoay .9s linear infinite; }
+  .chan { position: relative; margin: auto 36px 0; padding: 18px 0 22px; }
+  .thanh { height: 3px; border-radius: 9999px; background: var(--line); overflow: hidden; }
+  .thanh > div { height: 100%; width: 38%; border-radius: 9999px; background: linear-gradient(to right, #6366f1, #8b5cf6); animation: chay 1.3s cubic-bezier(.4,0,.2,1) infinite; }
+  .nho { margin: 12px 0 0; font-size: 11px; line-height: 1.4; color: var(--muted); text-align: center; min-height: 15px; }
+  @keyframes chay { 0% { transform: translateX(-120%); } 100% { transform: translateX(320%); } }
+  @keyframes xoay { to { transform: rotate(360deg); } }
+  @keyframes hien { from { opacity: 0; transform: scale(.97); } to { opacity: 1; transform: scale(1); } }
+</style>
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var toi = q.get("theme") ? q.get("theme") === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (toi) document.documentElement.classList.add("dark");
+    window.__v = q.get("v") || "";
+  })();
+</script>
+</head>
+<body>
+  <div class="the">
+    <div class="nen"></div>
+    <button class="dong" id="dong" title="Thoát" aria-label="Thoát">&#x2715;</button>
+    <div class="dau">
+      <img class="logo" src="icon.png" alt="" draggable="false" />
+      <h1>SubForge Pro</h1>
+      <div class="pb" id="pb"></div>
+    </div>
+    <div class="buoc" id="buoc" aria-label="Khởi động: bước 1 trên 2">
+      <div class="b dang" id="b1"><span class="so">1</span><span class="ten">Khởi động dịch vụ xử lý</span><span class="tt" id="tt1">đang chạy…</span></div>
+      <div class="b" id="b2"><span class="so">2</span><span class="ten">Tải giao diện</span><span class="tt" id="tt2">chờ</span></div>
+    </div>
+    <div class="chan">
+      <div class="thanh"><div></div></div>
+      <p class="nho" id="ghi-chu"></p>
+    </div>
+  </div>
+  <script>
+    var DAU_TICH = '<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+    var QUAY = '<span class="quay"></span>';
+    if (window.__v) document.getElementById("pb").textContent = "Phiên bản " + window.__v;
+    document.getElementById("b1").querySelector(".so").innerHTML = QUAY;
+    //  × = thoát app qua IPC (xem khoi_dong_preload.js / ipcMain "khoi-dong:thoat"); không có cầu nối thì đóng cửa sổ.
+    function thoat() { if (window.khoiDong && window.khoiDong.thoat) window.khoiDong.thoat(); else window.close(); }
+    document.getElementById("dong").addEventListener("click", thoat);
+    //  Esc cũng thoát — phòng khi chuột không tới được nút.
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") thoat(); });
+    var buocHienTai = 1;
+    //  Cột trạng thái chỉ hiện chữ NGẮN: "đang chạy…" + số giây (nếu main gửi), không nhắc lại tên bước.
+    function trangThaiNgan(moTa) {
+      var m = /\((\d+) giây\)/.exec(moTa || "");
+      return m ? "đang chạy… " + m[1] + " giây" : "đang chạy…";
+    }
+    //  main.js gọi: {buoc: 1|2, mo_ta: "…"}.
+    window.datTrangThai = function (t) {
+      if (!t) return;
+      var buoc = Number(t.buoc) || buocHienTai;
+      if (buoc >= 2 && buocHienTai < 2) {
+        buocHienTai = 2;
+        var b1 = document.getElementById("b1"), b2 = document.getElementById("b2");
+        b1.className = "b xong"; b1.querySelector(".so").innerHTML = DAU_TICH; document.getElementById("tt1").textContent = "xong";
+        b2.className = "b dang"; b2.querySelector(".so").innerHTML = QUAY;
+        document.getElementById("buoc").setAttribute("aria-label", "Khởi động: bước 2 trên 2");
+        var g = document.getElementById("ghi-chu"); if (g) g.textContent = "";
+      }
+      document.getElementById(buocHienTai === 2 ? "tt2" : "tt1").textContent = trangThaiNgan(t.mo_ta);
+    };
+    //  Ghi chú trấn an khi bước 1 kéo dài (backend nạp lần đầu / diệt virus quét).
+    setTimeout(function () { var g = document.getElementById("ghi-chu"); if (g && buocHienTai === 1) g.textContent = "Lần mở đầu sau khi cài có thể mất 10–30 giây."; }, 6000);
+    setTimeout(function () { var g = document.getElementById("ghi-chu"); if (g && buocHienTai === 1) g.textContent = "Vẫn đang khởi động — máy chậm hoặc phần mềm diệt virus đang quét, vui lòng đợi thêm."; }, 30000);
+  </script>
+</body>
+</html>

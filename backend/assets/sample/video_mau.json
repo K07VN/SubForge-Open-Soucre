@@ -1,0 +1,48 @@
+{
+  "giong": "Qwen3-TTS serena",
+  "dai": 22.96,
+  "cau": [
+    {
+      "bat_dau": 0.6,
+      "ket_thuc": 4.619,
+      "giong_dai": 3.919,
+      "cau": "你知道吗？月亮每年都在离我们远去",
+      "tep": "cau_1.wav"
+    },
+    {
+      "bat_dau": 5.119,
+      "ket_thuc": 7.492,
+      "giong_dai": 2.273,
+      "cau": "每年大约远离地球三点八厘米",
+      "tep": "cau_2.wav"
+    },
+    {
+      "bat_dau": 7.992,
+      "ket_thuc": 11.351,
+      "giong_dai": 3.259,
+      "cau": "太阳光到达地球，大约需要八分钟",
+      "tep": "cau_3.wav"
+    },
+    {
+      "bat_dau": 11.851,
+      "ket_thuc": 14.555,
+      "giong_dai": 2.604,
+      "cau": "夜空中最亮的恒星是天狼星",
+      "tep": "cau_4.wav"
+    },
+    {
+      "bat_dau": 15.055,
+      "ket_thuc": 18.333,
+      "giong_dai": 3.179,
+      "cau": "流星其实是燃烧发光的太空碎石",
+      "tep": "cau_5.wav"
+    },
+    {
+      "bat_dau": 18.833,
+      "ket_thuc": 22.065,
+      "giong_dai": 3.131,
+      "cau": "今晚抬头看看星空吧，记得点赞关注",
+      "tep": "cau_6.wav"
+    }
+  ]
+}

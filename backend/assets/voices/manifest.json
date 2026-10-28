@@ -1,0 +1,181 @@
+{
+  "version": 1,
+  "voices": [
+    {
+      "id": "HN Anh Tú",
+      "hien_thi": "HN Anh Tú",
+      "gioi_tinh": "nam",
+      "dac_diem": [
+        "Hà Nội"
+      ],
+      "file": "hn_anh_tu.wav",
+      "emb": "hn_anh_tu.emb.json",
+      "sha256": "1ded05ad327436542ede1f6f868c086655b83eb8cf0a61911aa35209a9fabc5f",
+      "luu_y": ""
+    },
+    {
+      "id": "Hoa Vu Quynh",
+      "hien_thi": "Hoa Vu Quynh",
+      "gioi_tinh": "nữ",
+      "dac_diem": [],
+      "file": "hoa_vu_quynh.wav",
+      "emb": "hoa_vu_quynh.emb.json",
+      "sha256": "441da68e007ba56aa2edd4dbbd1d7d2d6812511ed676c7c4b7cce05c8e69a10f",
+      "luu_y": ""
+    },
+    {
+      "id": "MC Giọng Nữ",
+      "hien_thi": "MC Giọng Nữ",
+      "gioi_tinh": "nữ",
+      "dac_diem": [
+        "MC"
+      ],
+      "file": "mc_giong_nu.wav",
+      "emb": "mc_giong_nu.emb.json",
+      "sha256": "3c3a3510f787c83b9d2b5c2a0dcba4e31357cba60dc72ca8f12c09dd300e3325",
+      "luu_y": ""
+    },
+    {
+      "id": "MR Cu",
+      "hien_thi": "MR Cu",
+      "gioi_tinh": "nam",
+      "dac_diem": [],
+      "file": "mr_cu.wav",
+      "emb": "mr_cu.emb.json",
+      "sha256": "aa6872e721b40341e57ec426c01792c0e9d8a5cc3eb934badf364116b10c20c2",
+      "luu_y": ""
+    },
+    {
+      "id": "Minh Quân Pro Vbee",
+      "hien_thi": "Minh Quân Pro Vbee",
+      "gioi_tinh": "nam",
+      "dac_diem": [],
+      "file": "minh_quan_pro_vbee.wav",
+      "emb": "minh_quan_pro_vbee.emb.json",
+      "sha256": "c688b00d50fd32c88f77c283271a32b6fd9ca1d0ac6ce6ccbeb0632106deccc3",
+      "luu_y": ""
+    },
+    {
+      "id": "Mạnh Dũng 2 Vbee",
+      "hien_thi": "Mạnh Dũng 2 Vbee",
+      "gioi_tinh": "nam",
+      "dac_diem": [],
+      "file": "manh_dung_2_vbee.wav",
+      "emb": "manh_dung_2_vbee.emb.json",
+      "sha256": "15f4f8217bb3db1aff75066e3b690bf222915dbbdef5923d8aa7649dde15cda3",
+      "luu_y": ""
+    },
+    {
+      "id": "Nam Nhí Nhảnh",
+      "hien_thi": "Nam Nhí Nhảnh",
+      "gioi_tinh": "nam",
+      "dac_diem": [
+        "Nhí nhảnh"
+      ],
+      "file": "nam_nhi_nhanh.wav",
+      "emb": "nam_nhi_nhanh.emb.json",
+      "sha256": "316c06f87170d5b5afffb11724f702b6154da6a6e223b4b7ade8a03d4a13f29f",
+      "luu_y": ""
+    },
+    {
+      "id": "Nga Lily",
+      "hien_thi": "Nga Lily",
+      "gioi_tinh": "nữ",
+      "dac_diem": [],
+      "file": "nga_lily.wav",
+      "emb": "nga_lily.emb.json",
+      "sha256": "68fd6047363b89a344e6aba76f23a4ba52c3cfce59cac95741c57ef617d51f29",
+      "luu_y": ""
+    },
+    {
+      "id": "Ngọc Huyền Pro Vbee",
+      "hien_thi": "Ngọc Huyền Pro Vbee",
+      "gioi_tinh": "nữ",
+      "dac_diem": [],
+      "file": "ngoc_huyen_pro_vbee.wav",
+      "emb": "ngoc_huyen_pro_vbee.emb.json",
+      "sha256": "501963438327fc14ca12ad9139ac6d22624cc10278599e5f6083f10db2043dae",
+      "luu_y": ""
+    },
+    {
+      "id": "Ngọc Huyền Vbee",
+      "hien_thi": "Ngọc Huyền Vbee",
+      "gioi_tinh": "nữ",
+      "dac_diem": [],
+      "file": "ngoc_huyen_vbee.wav",
+      "emb": "ngoc_huyen_vbee.emb.json",
+      "sha256": "039512c7b0030fcbbcb0b20eea4c5a005b33fc4ce0c95611039e6d2fc50005a1",
+      "luu_y": ""
+    },
+    {
+      "id": "Ngọc Huyền (mẫu)",
+      "hien_thi": "Ngọc Huyền (mẫu)",
+      "gioi_tinh": "nữ",
+      "dac_diem": [],
+      "file": "ngoc_huyen_mau.wav",
+      "emb": "ngoc_huyen_mau.emb.json",
+      "sha256": "34a89feb3dda769b1028eead89db40b2c1c7735f0e7d6ab8b7fb163b9ea59c76",
+      "luu_y": ""
+    },
+    {
+      "id": "Phóng Viên Nam",
+      "hien_thi": "Phóng Viên Nam",
+      "gioi_tinh": "nam",
+      "dac_diem": [
+        "Tin tức"
+      ],
+      "file": "phong_vien_nam.wav",
+      "emb": "phong_vien_nam.emb.json",
+      "sha256": "1a11dec6b399e99f917dbab7e3a1cb8af1683f061c0aa9fb1b90999e798b18a0",
+      "luu_y": ""
+    },
+    {
+      "id": "Pro Trainer",
+      "hien_thi": "Pro Trainer",
+      "gioi_tinh": "nam",
+      "dac_diem": [
+        "Diễn giả"
+      ],
+      "file": "pro_trainer.wav",
+      "emb": "pro_trainer.emb.json",
+      "sha256": "72373775b7216a52eba3abeddeecc88dfb4532649c0af73527b79a8062f7f81a",
+      "luu_y": ""
+    },
+    {
+      "id": "Review Tone Cao",
+      "hien_thi": "Review Tone Cao",
+      "gioi_tinh": "nữ",
+      "dac_diem": [
+        "Review",
+        "Giọng cao"
+      ],
+      "file": "review_tone_cao.wav",
+      "emb": "review_tone_cao.emb.json",
+      "sha256": "25bbe14613eb484e251ad5a9f1bc7de49a96414d73c9245b3d665f3ecb8c64d5",
+      "luu_y": ""
+    },
+    {
+      "id": "Review Tone Trung",
+      "hien_thi": "Review Tone Trung",
+      "gioi_tinh": "nữ",
+      "dac_diem": [
+        "Review",
+        "Giọng trung"
+      ],
+      "file": "review_tone_trung.wav",
+      "emb": "review_tone_trung.emb.json",
+      "sha256": "67842336bf130f9d20a23a0a525a03d3252cd17def95dfb84d4dd9d828887bd7",
+      "luu_y": ""
+    },
+    {
+      "id": "Tường Vy",
+      "hien_thi": "Tường Vy",
+      "gioi_tinh": "nữ",
+      "dac_diem": [],
+      "file": "tuong_vy.wav",
+      "emb": "tuong_vy.emb.json",
+      "sha256": "790a1cdb58e8a219e341823db5906e88deee05ce9e8b88e7511e8fe16101718f",
+      "luu_y": ""
+    }
+  ]
+}

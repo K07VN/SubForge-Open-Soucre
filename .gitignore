@@ -1,0 +1,47 @@
+# Runtime and models are provided as separate Release assets.
+/runtime/
+/local-data/
+/original/
+/evidence/
+/node_modules/
+**/node_modules/
+/.build/
+/.venv/
+/venv/
+**/__pycache__/
+*.py[cod]
+*.marshal
+*.pyz
+*.log
+.env
+.env.*
+!.env.example
+*.7z
+*.7z.*
+*.zip
+*.whl
+*.gguf
+*.safetensors
+*.onnx
+*.pth
+*.pt
+*.pyd
+*.dll
+*.exe
+*.lib
+*.partial
+*.tmp
+.DS_Store
+Thumbs.db
+*.ps1
+*.cmd
+*.bat
+*.db
+*.sqlite
+/scripts/
+/tools/
+/run_local.py
+
+# Build output; editable recovered code lives in frontend/src.
+/frontend/dist/
+# Keep backend/assets and frontend/public fonts/resources.

@@ -1,0 +1,635 @@
+{
+ "version": 1,
+ "voices": {
+  "vieneu:Trúc Ly": {
+   "file": "vieneu_truc_ly.mp3",
+   "sha256": "c5893037a557c0f56b2da2478e3ff12e180b53879b949b00db67c53b5158caf0",
+   "cau": "Ngày xưa, ở một ngôi làng nhỏ bên sông, có một cô bé rất thích ngắm sao mỗi tối. Cô tin rằng mỗi vì sao là một điều ước."
+  },
+  "vieneu:Đoan Trang": {
+   "file": "vieneu_doan_trang.mp3",
+   "sha256": "5ee590484c459fdf0a0b272f9861e79da85c37852746d8e9fafc97c533fea53a",
+   "cau": "Theo tin mới nhất, thành phố vừa công bố kế hoạch mở rộng tuyến metro, dự kiến hoàn thành vào năm hai nghìn không trăm hai mươi tám."
+  },
+  "vieneu:Ngọc Linh": {
+   "file": "vieneu_ngoc_linh.mp3",
+   "sha256": "6d5177341b81e68dbf757c310c512d3fb56c2b4edf4cac301293f842767033aa",
+   "cau": "Sau một tuần dùng thử, mình thấy chiếc máy này nhanh hơn mong đợi, pin trâu, nhưng giá thì hơi chát. Cùng xem chi tiết nhé!"
+  },
+  "vieneu:Mai Anh": {
+   "file": "vieneu_mai_anh.mp3",
+   "sha256": "a65629f80bc23a4b0174eb61fc53cdea82cc0596a8de44354d7e251ee2193c33",
+   "cau": "Theo tin mới nhất, thành phố vừa công bố kế hoạch mở rộng tuyến metro, dự kiến hoàn thành vào năm hai nghìn không trăm hai mươi tám."
+  },
+  "vieneu:Phạm Tuyên": {
+   "file": "vieneu_pham_tuyen.mp3",
+   "sha256": "2567b219fbab7a3b2e2d1a973ad2d8814416a706dffe698d6716454ce30b487d",
+   "cau": "Thành công không đến từ một khoảnh khắc, mà từ hàng nghìn lựa chọn nhỏ mỗi ngày. Bạn đã chọn gì cho hôm nay?"
+  },
+  "vieneu:Thanh Bình": {
+   "file": "vieneu_thanh_binh.mp3",
+   "sha256": "538e2bd1d59673d54dd7273d3b98517c737c974cf250eb40f94be04cca432c71",
+   "cau": "Ngày xưa, ở một ngôi làng nhỏ bên sông, có một cô bé rất thích ngắm sao mỗi tối. Cô tin rằng mỗi vì sao là một điều ước."
+  },
+  "vieneu:Minh Đức": {
+   "file": "vieneu_minh_duc.mp3",
+   "sha256": "99ecd15710f38a231a7a477aaf2074e61816e9e02285a5ffade634002bd25b15",
+   "cau": "Theo tin mới nhất, thành phố vừa công bố kế hoạch mở rộng tuyến metro, dự kiến hoàn thành vào năm hai nghìn không trăm hai mươi tám."
+  },
+  "vieneu:Ngọc Trân": {
+   "file": "vieneu_ngoc_tran.mp3",
+   "sha256": "b289cc903d2fdee53cc098a83c44e24cf847d9dd594b991f63a2c165c65b1814",
+   "cau": "Sau một tuần dùng thử, mình thấy chiếc máy này nhanh hơn mong đợi, pin trâu, nhưng giá thì hơi chát. Cùng xem chi tiết nhé!"
+  },
+  "vieneu:Quang Sơn": {
+   "file": "vieneu_quang_son.mp3",
+   "sha256": "80a77fc19513ef48fcda9f83162292cec722e88b1d1b7c27ba17b505b0da7b20",
+   "cau": "Xin chào quý vị và các bạn, chào mừng đến với chương trình hôm nay. Hãy cùng bắt đầu ngay thôi nào!"
+  },
+  "vieneu:Thục Đoan": {
+   "file": "vieneu_thuc_doan.mp3",
+   "sha256": "3c5881ec6eea981166404836b0b1a3e94b0974bf7584ca33d45fa1f504db2033",
+   "cau": "Thành công không đến từ một khoảnh khắc, mà từ hàng nghìn lựa chọn nhỏ mỗi ngày. Bạn đã chọn gì cho hôm nay?"
+  },
+  "vieneu:Thùy Dung": {
+   "file": "vieneu_thuy_dung.mp3",
+   "sha256": "ebd93fa9217ac00893eb1c058a64a2b09a225ca3b3f77bf22e3bbd115f8eeb6d",
+   "cau": "Theo tin mới nhất, thành phố vừa công bố kế hoạch mở rộng tuyến metro, dự kiến hoàn thành vào năm hai nghìn không trăm hai mươi tám."
+  },
+  "vieneu:Xuân Vĩnh": {
+   "file": "vieneu_xuan_vinh.mp3",
+   "sha256": "139d1068dc7103184117e9646edbe6f8e415c7811b33faddd4d2ba9f249aa2c5",
+   "cau": "Theo tin mới nhất, thành phố vừa công bố kế hoạch mở rộng tuyến metro, dự kiến hoàn thành vào năm hai nghìn không trăm hai mươi tám."
+  },
+  "vieneu:Thái Sơn": {
+   "file": "vieneu_thai_son.mp3",
+   "sha256": "c3f14da43f8ece6ff62fc5c89a196ebafac2bf079a027cc99d35a84005cfc00d",
+   "cau": "Sau một tuần dùng thử, mình thấy chiếc máy này nhanh hơn mong đợi, pin trâu, nhưng giá thì hơi chát. Cùng xem chi tiết nhé!"
+  },
+  "vieneu:Minh Triết": {
+   "file": "vieneu_minh_triet.mp3",
+   "sha256": "b6dae74de1ce8f8893710c4b03fa1bcf3b0bedbb05d025c486d7d592506a2bf0",
+   "cau": "Theo tin mới nhất, thành phố vừa công bố kế hoạch mở rộng tuyến metro, dự kiến hoàn thành vào năm hai nghìn không trăm hai mươi tám."
+  },
+  "vieneu:Ngọc Huyền": {
+   "file": "vieneu_ngoc_huyen.mp3",
+   "sha256": "849338a7c7f9deff45c021a8f35e074129d5b4bf9e24fe040f52e1e59765b6b7",
+   "cau": "Thành công không đến từ một khoảnh khắc, mà từ hàng nghìn lựa chọn nhỏ mỗi ngày. Bạn đã chọn gì cho hôm nay?"
+  },
+  "vieneu:Quỳnh Anh": {
+   "file": "vieneu_quynh_anh.mp3",
+   "sha256": "c01f69388e88fd6b3e248b0bd922c8d6e10f3bd0eac17ce3f829390bccfd4bcd",
+   "cau": "Ngày xưa, ở một ngôi làng nhỏ bên sông, có một cô bé rất thích ngắm sao mỗi tối. Cô tin rằng mỗi vì sao là một điều ước."
+  },
+  "vieneu:Mỹ Duyên": {
+   "file": "vieneu_my_duyen.mp3",
+   "sha256": "a7bb14929ba765184e2899507a72df0972228df8f07df32fcc9fc144d8fece1a",
+   "cau": "Theo tin mới nhất, thành phố vừa công bố kế hoạch mở rộng tuyến metro, dự kiến hoàn thành vào năm hai nghìn không trăm hai mươi tám."
+  },
+  "vieneu:Kim Thanh": {
+   "file": "vieneu_kim_thanh.mp3",
+   "sha256": "d8b65fa6d0730fd871e28da4c0f3b0007e0cf279e9c7bd01c89f1a45c500f1e9",
+   "cau": "Sau một tuần dùng thử, mình thấy chiếc máy này nhanh hơn mong đợi, pin trâu, nhưng giá thì hơi chát. Cùng xem chi tiết nhé!"
+  },
+  "vieneu:Adam": {
+   "file": "vieneu_adam.mp3",
+   "sha256": "725b2459b2860541d30b5054446f61a5f9ec319dc528017f5913747eace77747",
+   "cau": "Xin chào quý vị và các bạn, chào mừng đến với chương trình hôm nay. Hãy cùng bắt đầu ngay thôi nào!"
+  },
+  "vieneu:Đức Trí": {
+   "file": "vieneu_duc_tri.mp3",
+   "sha256": "bd099f2b168a854a28b3bb58fca6828ce9269b433ac0dc6de947ada0b1d09435",
+   "cau": "Thành công không đến từ một khoảnh khắc, mà từ hàng nghìn lựa chọn nhỏ mỗi ngày. Bạn đã chọn gì cho hôm nay?"
+  },
+  "vieneu-clone:HN Anh Tú": {
+   "file": "vieneu_clone_hn_anh_tu.mp3",
+   "sha256": "2ee046c9f49f15fb72a37bb2636b3d60a2c978955b0fff2a82b7b78e216f3556",
+   "cau": "Xin chào quý vị và các bạn, chào mừng đến với chương trình hôm nay. Hãy cùng bắt đầu ngay thôi nào!"
+  },
+  "vieneu-clone:Hoa Vu Quynh": {
+   "file": "vieneu_clone_hoa_vu_quynh.mp3",
+   "sha256": "616bbf3882ddb41dd41141c2a5a917222b6b5224fbb44c50ce3212f995a722df",
+   "cau": "Thành công không đến từ một khoảnh khắc, mà từ hàng nghìn lựa chọn nhỏ mỗi ngày. Bạn đã chọn gì cho hôm nay?"
+  },
+  "vieneu-clone:MC Giọng Nữ": {
+   "file": "vieneu_clone_mc_giong_nu.mp3",
+   "sha256": "59bbd32176d1de12183c0132e6389c5d3b16ab8c42809fdb65670716af553638",
+   "cau": "Xin chào quý vị và các bạn, chào mừng đến với chương trình hôm nay. Hãy cùng bắt đầu ngay thôi nào!"
+  },
+  "vieneu-clone:MR Cu": {
+   "file": "vieneu_clone_mr_cu.mp3",
+   "sha256": "31e064e5307f47c4c4b071cda948f44c153df02e77e604d035c131b5656a6058",
+   "cau": "Theo tin mới nhất, thành phố vừa công bố kế hoạch mở rộng tuyến metro, dự kiến hoàn thành vào năm hai nghìn không trăm hai mươi tám."
+  },
+  "vieneu-clone:Minh Quân Pro Vbee": {
+   "file": "vieneu_clone_minh_quan_pro_vbee.mp3",
+   "sha256": "6bd75041150ed8f90760c7b866bcd4178c76003904444fd58bf1f7dd993ad5b1",
+   "cau": "Sau một tuần dùng thử, mình thấy chiếc máy này nhanh hơn mong đợi, pin trâu, nhưng giá thì hơi chát. Cùng xem chi tiết nhé!"
+  },
+  "vieneu-clone:Mạnh Dũng 2 Vbee": {
+   "file": "vieneu_clone_manh_dung_2_vbee.mp3",
+   "sha256": "f22a55675b48e446c5e5945b52b3b50372956538c4f5a7472517129afe517f93",
+   "cau": "Xin chào quý vị và các bạn, chào mừng đến với chương trình hôm nay. Hãy cùng bắt đầu ngay thôi nào!"
+  },
+  "vieneu-clone:Nam Nhí Nhảnh": {
+   "file": "vieneu_clone_nam_nhi_nhanh.mp3",
+   "sha256": "eda2a47b03a6a1badbe3c0898fb9622b18479b20074572ed2d356a20e0925417",
+   "cau": "Ôi, hôm nay trời đẹp quá! Mình rủ các bạn đi chơi công viên, rồi cùng ăn kem thật nhiều nhé!"
+  },
+  "vieneu-clone:Nga Lily": {
+   "file": "vieneu_clone_nga_lily.mp3",
+   "sha256": "69f3cb5a5c0c70a0bf92e577cd909adb18ee64261a4a512ba52ac9915dbb2dfa",
+   "cau": "Ngày xưa, ở một ngôi làng nhỏ bên sông, có một cô bé rất thích ngắm sao mỗi tối. Cô tin rằng mỗi vì sao là một điều ước."
+  },
+  "vieneu-clone:Ngọc Huyền Pro Vbee": {
+   "file": "vieneu_clone_ngoc_huyen_pro_vbee.mp3",
+   "sha256": "8ce04c237c42f29d5e9533dcb5b7be4cc8c95af490cf2d6a91de6042058a33ee",
+   "cau": "Theo tin mới nhất, thành phố vừa công bố kế hoạch mở rộng tuyến metro, dự kiến hoàn thành vào năm hai nghìn không trăm hai mươi tám."
+  },
+  "vieneu-clone:Ngọc Huyền Vbee": {
+   "file": "vieneu_clone_ngoc_huyen_vbee.mp3",
+   "sha256": "770807c9f4fc69c881fd9c552d80b0391485f18946249bd30212bb6ee6d658d0",
+   "cau": "Sau một tuần dùng thử, mình thấy chiếc máy này nhanh hơn mong đợi, pin trâu, nhưng giá thì hơi chát. Cùng xem chi tiết nhé!"
+  },
+  "vieneu-clone:Ngọc Huyền (mẫu)": {
+   "file": "vieneu_clone_ngoc_huyen_mau.mp3",
+   "sha256": "059ed3b55cc305805ce7b0b45d67c2ebf402484caccb71d5ea92088161053f57",
+   "cau": "Xin chào quý vị và các bạn, chào mừng đến với chương trình hôm nay. Hãy cùng bắt đầu ngay thôi nào!"
+  },
+  "vieneu-clone:Phóng Viên Nam": {
+   "file": "vieneu_clone_phong_vien_nam.mp3",
+   "sha256": "457c94c0f2d07bd6bf304f47f85e2a67678fb8cc09dc7e6db634a0ecd5f3b049",
+   "cau": "Theo tin mới nhất, thành phố vừa công bố kế hoạch mở rộng tuyến metro, dự kiến hoàn thành vào năm hai nghìn không trăm hai mươi tám."
+  },
+  "vieneu-clone:Pro Trainer": {
+   "file": "vieneu_clone_pro_trainer.mp3",
+   "sha256": "7e9b1823706634c762aabfffcbae4e75865f376d1e0f76e6cb7479bbf16f4964",
+   "cau": "Thành công không đến từ một khoảnh khắc, mà từ hàng nghìn lựa chọn nhỏ mỗi ngày. Bạn đã chọn gì cho hôm nay?"
+  },
+  "vieneu-clone:Review Tone Cao": {
+   "file": "vieneu_clone_review_tone_cao.mp3",
+   "sha256": "794519b7237c2b28102fbf85ff6101e30df8ebf718fed1f3356cb403032554bb",
+   "cau": "Sau một tuần dùng thử, mình thấy chiếc máy này nhanh hơn mong đợi, pin trâu, nhưng giá thì hơi chát. Cùng xem chi tiết nhé!"
+  },
+  "vieneu-clone:Review Tone Trung": {
+   "file": "vieneu_clone_review_tone_trung.mp3",
+   "sha256": "01511aa7f8de664e256e72841c95f85184e82ec6c99054f01e3d849ea13f42a3",
+   "cau": "Sau một tuần dùng thử, mình thấy chiếc máy này nhanh hơn mong đợi, pin trâu, nhưng giá thì hơi chát. Cùng xem chi tiết nhé!"
+  },
+  "vieneu-clone:Tường Vy": {
+   "file": "vieneu_clone_tuong_vy.mp3",
+   "sha256": "11f54cfebb6927c2094a83a1f5c04e8b9dd3d8e9398c56ffc7e9e1fd053c60aa",
+   "cau": "Xin chào quý vị và các bạn, chào mừng đến với chương trình hôm nay. Hãy cùng bắt đầu ngay thôi nào!"
+  },
+  "qwen:en:ryan": {
+   "file": "qwen_en_ryan.mp3",
+   "sha256": "70bc7fe18c5a12e4e776d4d3db544d6679a68bc635f6d7d866c30dbc1fca6d54",
+   "cau": "Good morning, everyone. Today we're going to look at three simple ways to save time at work."
+  },
+  "qwen:en:aiden": {
+   "file": "qwen_en_aiden.mp3",
+   "sha256": "d536b86808fae82467473ffebdb32f198166fa3c1a404d60785992894b73a412",
+   "cau": "It was a quiet evening by the sea, and the waves rolled in slowly under the orange sky."
+  },
+  "qwen:en:ono_anna": {
+   "file": "qwen_en_ono_anna.mp3",
+   "sha256": "12e75ee704f068eb7da0187c5af7976dd03536f4fdbd5a4fc57f9713f7d5fb95",
+   "cau": "Good morning, everyone. Today we're going to look at three simple ways to save time at work."
+  },
+  "qwen:en:sohee": {
+   "file": "qwen_en_sohee.mp3",
+   "sha256": "ced851e5320efebf119f6cb8e6369fa15de2e508e58524cfdd600d171344863f",
+   "cau": "It was a quiet evening by the sea, and the waves rolled in slowly under the orange sky."
+  },
+  "qwen:en:vivian": {
+   "file": "qwen_en_vivian.mp3",
+   "sha256": "112edd99cb4ed35e3ad26ddce24ee09f90bebbbb343b2e8c7a1227e1ed0f9957",
+   "cau": "Good morning, everyone. Today we're going to look at three simple ways to save time at work."
+  },
+  "qwen:en:serena": {
+   "file": "qwen_en_serena.mp3",
+   "sha256": "5171be15f5346ee519be9bf415be1040aa534276f8279965cf5532fc9d8aee20",
+   "cau": "It was a quiet evening by the sea, and the waves rolled in slowly under the orange sky."
+  },
+  "qwen:en:uncle_fu": {
+   "file": "qwen_en_uncle_fu.mp3",
+   "sha256": "eaa21462a9b1c0229a1587e4cbb9a1f92a418a1843d371871558c08a5ceaa816",
+   "cau": "Good morning, everyone. Today we're going to look at three simple ways to save time at work."
+  },
+  "qwen:en:dylan": {
+   "file": "qwen_en_dylan.mp3",
+   "sha256": "2b39a95e1428ac8653f02a37e369437d34cf652528a4c79412ec288a3b58a074",
+   "cau": "It was a quiet evening by the sea, and the waves rolled in slowly under the orange sky."
+  },
+  "qwen:en:eric": {
+   "file": "qwen_en_eric.mp3",
+   "sha256": "5340af0b6e9738bb8248c80a5fc7526960266f502b9756eb9c0f91fbc0acc8fe",
+   "cau": "Good morning, everyone. Today we're going to look at three simple ways to save time at work."
+  },
+  "qwen:ja:ono_anna": {
+   "file": "qwen_ja_ono_anna.mp3",
+   "sha256": "afc8e5349bff06ed261f645c4c2ae92838e8ac7128bc2f61c5a5a18551a4ea16",
+   "cau": "皆さん、こんにちは。今日は、毎日の生活が少し楽になるコツを三つご紹介します。"
+  },
+  "qwen:ja:ryan": {
+   "file": "qwen_ja_ryan.mp3",
+   "sha256": "4ede33db65b954988878fc3672c84464b0308ccf148c4daf5dd269053e0d1ea9",
+   "cau": "夕方の海辺は静かで、波の音だけがゆっくりと聞こえていました。"
+  },
+  "qwen:ja:aiden": {
+   "file": "qwen_ja_aiden.mp3",
+   "sha256": "dad9e464ea951826a4a5ee999b421af1274116776df7ff6daa45f2a2668c2587",
+   "cau": "皆さん、こんにちは。今日は、毎日の生活が少し楽になるコツを三つご紹介します。"
+  },
+  "qwen:ja:sohee": {
+   "file": "qwen_ja_sohee.mp3",
+   "sha256": "204317995d91a5d23ed9300d6ddc556374ab27d8b9cdff1ba621f43d4de665b8",
+   "cau": "夕方の海辺は静かで、波の音だけがゆっくりと聞こえていました。"
+  },
+  "qwen:ja:vivian": {
+   "file": "qwen_ja_vivian.mp3",
+   "sha256": "992eecbc14d43bd84d58ca1a857e7625d65f2bdbd05711a16814a844e8eb9ffb",
+   "cau": "皆さん、こんにちは。今日は、毎日の生活が少し楽になるコツを三つご紹介します。"
+  },
+  "qwen:ja:serena": {
+   "file": "qwen_ja_serena.mp3",
+   "sha256": "e14e68552698f629da139f8e7507c6c5c36ccfd60e5d813b9a99b3fa85477b50",
+   "cau": "夕方の海辺は静かで、波の音だけがゆっくりと聞こえていました。"
+  },
+  "qwen:ja:uncle_fu": {
+   "file": "qwen_ja_uncle_fu.mp3",
+   "sha256": "4fbd804f4899dc957629f2116c95310fef8a85de66d9d46465aca64e204c7624",
+   "cau": "皆さん、こんにちは。今日は、毎日の生活が少し楽になるコツを三つご紹介します。"
+  },
+  "qwen:ja:dylan": {
+   "file": "qwen_ja_dylan.mp3",
+   "sha256": "d19a16988dd98d1cc9f23e463bb6b049255c6434712d10b9bc139f74f618aeeb",
+   "cau": "夕方の海辺は静かで、波の音だけがゆっくりと聞こえていました。"
+  },
+  "qwen:ja:eric": {
+   "file": "qwen_ja_eric.mp3",
+   "sha256": "23489eebb17d9a1d1e5be25ab1a2c742b33ed3bd4144986fed994805b3010d9c",
+   "cau": "皆さん、こんにちは。今日は、毎日の生活が少し楽になるコツを三つご紹介します。"
+  },
+  "qwen:ko:sohee": {
+   "file": "qwen_ko_sohee.mp3",
+   "sha256": "037cdfe57cfa9f1ce8001653d97cc2ecdf9962314a9ac0d607f140c504615176",
+   "cau": "안녕하세요, 여러분. 오늘은 일상을 조금 더 편하게 만들어 주는 방법 세 가지를 소개해 드릴게요."
+  },
+  "qwen:ko:ryan": {
+   "file": "qwen_ko_ryan.mp3",
+   "sha256": "929f6a5545dd89a5dde3e6f604fee01093daddfcda00cd2620af9d90481c8a20",
+   "cau": "저녁 바닷가는 고요했고, 파도 소리만 천천히 들려왔습니다."
+  },
+  "qwen:ko:aiden": {
+   "file": "qwen_ko_aiden.mp3",
+   "sha256": "3bb19924f739cc9d852ed311e972fecfff2e6afea7db55ecd1a9364882c22e23",
+   "cau": "안녕하세요, 여러분. 오늘은 일상을 조금 더 편하게 만들어 주는 방법 세 가지를 소개해 드릴게요."
+  },
+  "qwen:ko:ono_anna": {
+   "file": "qwen_ko_ono_anna.mp3",
+   "sha256": "7931f7bf896fe373a816513efc3eff68bbae744ec638d62436b06b749f0fccd0",
+   "cau": "저녁 바닷가는 고요했고, 파도 소리만 천천히 들려왔습니다."
+  },
+  "qwen:ko:vivian": {
+   "file": "qwen_ko_vivian.mp3",
+   "sha256": "acf071adc3eb284557e716ff05efa0a4c7a103f4514da82e035791f27cf9bb76",
+   "cau": "안녕하세요, 여러분. 오늘은 일상을 조금 더 편하게 만들어 주는 방법 세 가지를 소개해 드릴게요."
+  },
+  "qwen:ko:serena": {
+   "file": "qwen_ko_serena.mp3",
+   "sha256": "5bd3b379c660efc3559e7666735b9ae02d04b8c3a44085515130c86509e1fb6d",
+   "cau": "저녁 바닷가는 고요했고, 파도 소리만 천천히 들려왔습니다."
+  },
+  "qwen:ko:uncle_fu": {
+   "file": "qwen_ko_uncle_fu.mp3",
+   "sha256": "7fe2cc5935b76a5de09068b5eee24848a1e35ccd80183b853187e6266aa62e71",
+   "cau": "안녕하세요, 여러분. 오늘은 일상을 조금 더 편하게 만들어 주는 방법 세 가지를 소개해 드릴게요."
+  },
+  "qwen:ko:dylan": {
+   "file": "qwen_ko_dylan.mp3",
+   "sha256": "b7eded72b7e2101d414189d38202b8e8aaf870e25ede47d34f3b91ef12b0e3ee",
+   "cau": "저녁 바닷가는 고요했고, 파도 소리만 천천히 들려왔습니다."
+  },
+  "qwen:ko:eric": {
+   "file": "qwen_ko_eric.mp3",
+   "sha256": "e22e5ee189d0282a0032becc19f94cfef4cfe72fe40476f9e52fc5f6ca8bb054",
+   "cau": "안녕하세요, 여러분. 오늘은 일상을 조금 더 편하게 만들어 주는 방법 세 가지를 소개해 드릴게요."
+  },
+  "qwen:zh-cn:vivian": {
+   "file": "qwen_zh_cn_vivian.mp3",
+   "sha256": "229f009c4b6a41f40d96f212b2d6dc4bb9226b4f07dff43d363776e1016587dc",
+   "cau": "大家好，欢迎收看今天的节目。接下来，我们一起看看这周最值得关注的新闻。"
+  },
+  "qwen:zh-cn:serena": {
+   "file": "qwen_zh_cn_serena.mp3",
+   "sha256": "c17764f0445b198f6cb6cea949644d43d3c46a8244bb77fdc574fbc1b2252825",
+   "cau": "夜幕降临，城市的灯光一盏接一盏亮了起来，街上的行人慢慢多了。"
+  },
+  "qwen:zh-cn:uncle_fu": {
+   "file": "qwen_zh_cn_uncle_fu.mp3",
+   "sha256": "556e73ab52f34c686896d09fdad1ca982a74daa23562b06200cf487c35e4b68e",
+   "cau": "大家好，欢迎收看今天的节目。接下来，我们一起看看这周最值得关注的新闻。"
+  },
+  "qwen:zh-cn:dylan": {
+   "file": "qwen_zh_cn_dylan.mp3",
+   "sha256": "317219a6711e9d73e3b8b5171bbe85833b73374189214b77768199660996ae51",
+   "cau": "夜幕降临，城市的灯光一盏接一盏亮了起来，街上的行人慢慢多了。"
+  },
+  "qwen:zh-cn:eric": {
+   "file": "qwen_zh_cn_eric.mp3",
+   "sha256": "996943e679a4d09ba9cc96fbe1122017a946b40909336d85632a220d9835e4ad",
+   "cau": "大家好，欢迎收看今天的节目。接下来，我们一起看看这周最值得关注的新闻。"
+  },
+  "qwen:zh-cn:ryan": {
+   "file": "qwen_zh_cn_ryan.mp3",
+   "sha256": "f3e5e9b6b718ffe712b6d8680d12ab874b5c98fe59cba42e82fe5869ec3b5550",
+   "cau": "夜幕降临，城市的灯光一盏接一盏亮了起来，街上的行人慢慢多了。"
+  },
+  "qwen:zh-cn:aiden": {
+   "file": "qwen_zh_cn_aiden.mp3",
+   "sha256": "88a5cbad99d8292470045fec28e62e12892a9d99c7578fd3860cf06b2756b1a9",
+   "cau": "大家好，欢迎收看今天的节目。接下来，我们一起看看这周最值得关注的新闻。"
+  },
+  "qwen:zh-cn:ono_anna": {
+   "file": "qwen_zh_cn_ono_anna.mp3",
+   "sha256": "45bc348652f68301cdc1086f984a4ef6e6ee485a6dffc03fe0afe2ed10f13484",
+   "cau": "夜幕降临，城市的灯光一盏接一盏亮了起来，街上的行人慢慢多了。"
+  },
+  "qwen:zh-cn:sohee": {
+   "file": "qwen_zh_cn_sohee.mp3",
+   "sha256": "52a973063405c085f7839bd4712e36c065fcb915cb102b8d3d71c4be39f2e7a9",
+   "cau": "大家好，欢迎收看今天的节目。接下来，我们一起看看这周最值得关注的新闻。"
+  },
+  "qwen:de:ryan": {
+   "file": "qwen_de_ryan.mp3",
+   "sha256": "c83bdf573b5d43408364ce8da36ebab42277c07c7007dd65b9977ddf33617de3",
+   "cau": "Guten Tag, meine Damen und Herren. Heute zeige ich Ihnen drei einfache Wege, im Alltag Zeit zu sparen."
+  },
+  "qwen:de:aiden": {
+   "file": "qwen_de_aiden.mp3",
+   "sha256": "e9c7f4c1db1c9a23ea723a9ddda1124d26c1a53f4222f46deb1d5e39bf920d6a",
+   "cau": "Der Abend am Meer war ruhig, und die Wellen rollten langsam an den Strand."
+  },
+  "qwen:de:ono_anna": {
+   "file": "qwen_de_ono_anna.mp3",
+   "sha256": "572f34ddd8ca75787ed7f73d00dbacd924167ef2910dca361bc28cbe15e7b90c",
+   "cau": "Guten Tag, meine Damen und Herren. Heute zeige ich Ihnen drei einfache Wege, im Alltag Zeit zu sparen."
+  },
+  "qwen:de:sohee": {
+   "file": "qwen_de_sohee.mp3",
+   "sha256": "612230318c07cc3137d77384b6b5ead0142a52bb9e1fc28f8f84f3b73ff30d2f",
+   "cau": "Der Abend am Meer war ruhig, und die Wellen rollten langsam an den Strand."
+  },
+  "qwen:de:vivian": {
+   "file": "qwen_de_vivian.mp3",
+   "sha256": "69f5dd4881e5605b08aa06354769793d41c2796ef1108fbe5da7e661f1bd03c7",
+   "cau": "Guten Tag, meine Damen und Herren. Heute zeige ich Ihnen drei einfache Wege, im Alltag Zeit zu sparen."
+  },
+  "qwen:de:serena": {
+   "file": "qwen_de_serena.mp3",
+   "sha256": "c0681dc3fba366086101ac0828d9dcd30f371b75dc010c333e932fdfecd8e3f7",
+   "cau": "Der Abend am Meer war ruhig, und die Wellen rollten langsam an den Strand."
+  },
+  "qwen:de:uncle_fu": {
+   "file": "qwen_de_uncle_fu.mp3",
+   "sha256": "f14528b7767b5a1cdd2c623cce7e09799086da2f7be6752a8cbd90ffb5305e1d",
+   "cau": "Guten Tag, meine Damen und Herren. Heute zeige ich Ihnen drei einfache Wege, im Alltag Zeit zu sparen."
+  },
+  "qwen:de:dylan": {
+   "file": "qwen_de_dylan.mp3",
+   "sha256": "444dab71af7fa749b1a426dfd6bc8303cf4893c2d844897447278cd1b99db710",
+   "cau": "Der Abend am Meer war ruhig, und die Wellen rollten langsam an den Strand."
+  },
+  "qwen:de:eric": {
+   "file": "qwen_de_eric.mp3",
+   "sha256": "3f436866c3978d3984068a35e54f186b41640d754425a5ecc7076a170126f635",
+   "cau": "Guten Tag, meine Damen und Herren. Heute zeige ich Ihnen drei einfache Wege, im Alltag Zeit zu sparen."
+  },
+  "qwen:fr:ryan": {
+   "file": "qwen_fr_ryan.mp3",
+   "sha256": "c019404f4404339d55b224616ed4bd81e45619f128bb14695e886141471f3bd0",
+   "cau": "Bonjour à tous. Aujourd'hui, je vous présente trois astuces simples pour gagner du temps au quotidien."
+  },
+  "qwen:fr:aiden": {
+   "file": "qwen_fr_aiden.mp3",
+   "sha256": "fbc42850d3bcfbe22fe5882643964337ec8d5b404a56b39391b7db79a8fbc7d2",
+   "cau": "Le soir tombait doucement sur la mer, et les vagues arrivaient lentement sur la plage."
+  },
+  "qwen:fr:ono_anna": {
+   "file": "qwen_fr_ono_anna.mp3",
+   "sha256": "4b5c7276712d23f0c79260c3ecb33e12c267a683519df16e9fb6bc62b1bf5b40",
+   "cau": "Bonjour à tous. Aujourd'hui, je vous présente trois astuces simples pour gagner du temps au quotidien."
+  },
+  "qwen:fr:sohee": {
+   "file": "qwen_fr_sohee.mp3",
+   "sha256": "4067aec02187f2a172870e1531c06bad539cd34f2f1ebd5ea2db58e2055dd219",
+   "cau": "Le soir tombait doucement sur la mer, et les vagues arrivaient lentement sur la plage."
+  },
+  "qwen:fr:vivian": {
+   "file": "qwen_fr_vivian.mp3",
+   "sha256": "c88145669cbe5525ecd88964a8f515871e0d1609fc152791a8ce39c70450b731",
+   "cau": "Bonjour à tous. Aujourd'hui, je vous présente trois astuces simples pour gagner du temps au quotidien."
+  },
+  "qwen:fr:serena": {
+   "file": "qwen_fr_serena.mp3",
+   "sha256": "aa2bcee56b50b59d0ba46d2ba4eff42c5dc224ea0b5e22686ede7b19a4703554",
+   "cau": "Le soir tombait doucement sur la mer, et les vagues arrivaient lentement sur la plage."
+  },
+  "qwen:fr:uncle_fu": {
+   "file": "qwen_fr_uncle_fu.mp3",
+   "sha256": "4150fdb3588a36fef363661c25b1a1c5f4f9b418f2bd1f4f63acd86a2b6e4424",
+   "cau": "Bonjour à tous. Aujourd'hui, je vous présente trois astuces simples pour gagner du temps au quotidien."
+  },
+  "qwen:fr:dylan": {
+   "file": "qwen_fr_dylan.mp3",
+   "sha256": "ccd26f2bb92f166f853811be2193d23fe0e73deb977e35d8a8898c072a019609",
+   "cau": "Le soir tombait doucement sur la mer, et les vagues arrivaient lentement sur la plage."
+  },
+  "qwen:fr:eric": {
+   "file": "qwen_fr_eric.mp3",
+   "sha256": "879811256f30531073e493b3fc1c60104c0647cd71b6331deffc0170083d6068",
+   "cau": "Bonjour à tous. Aujourd'hui, je vous présente trois astuces simples pour gagner du temps au quotidien."
+  },
+  "qwen:ru:ryan": {
+   "file": "qwen_ru_ryan.mp3",
+   "sha256": "3720c7c3dfa4a9077dcfc314d21eecdb7bb1037c381e534834b577683b5e557f",
+   "cau": "Здравствуйте! Сегодня я расскажу о трёх простых способах экономить время в повседневной жизни."
+  },
+  "qwen:ru:aiden": {
+   "file": "qwen_ru_aiden.mp3",
+   "sha256": "3aa1aa77f2515007736e6cad4209ffd27723ac5123840b5d3933509ddadf01a4",
+   "cau": "Вечер у моря был тихим, а волны медленно накатывали на берег."
+  },
+  "qwen:ru:ono_anna": {
+   "file": "qwen_ru_ono_anna.mp3",
+   "sha256": "25d54e096c85d4696a63d89e776a274a9c6e4a08890aa147b3126c69ee3f72ca",
+   "cau": "Здравствуйте! Сегодня я расскажу о трёх простых способах экономить время в повседневной жизни."
+  },
+  "qwen:ru:sohee": {
+   "file": "qwen_ru_sohee.mp3",
+   "sha256": "090a911d08638e6510c2723d577db3233861185c180860e5dcf8a3cd8ec93e98",
+   "cau": "Вечер у моря был тихим, а волны медленно накатывали на берег."
+  },
+  "qwen:ru:vivian": {
+   "file": "qwen_ru_vivian.mp3",
+   "sha256": "1b8d958d177db028a1e0d0a7f5abe1320a51a81410f18dd51c27165305b89625",
+   "cau": "Здравствуйте! Сегодня я расскажу о трёх простых способах экономить время в повседневной жизни."
+  },
+  "qwen:ru:serena": {
+   "file": "qwen_ru_serena.mp3",
+   "sha256": "a62c8304dc406a070c6f2c866ca4773ea316c406dadb9c13564fe4f4f45ec536",
+   "cau": "Вечер у моря был тихим, а волны медленно накатывали на берег."
+  },
+  "qwen:ru:uncle_fu": {
+   "file": "qwen_ru_uncle_fu.mp3",
+   "sha256": "42a3b8865f33bc078ecc9120c3f5c605e5ff9a6b307f5ec4f9761d6c134bda31",
+   "cau": "Здравствуйте! Сегодня я расскажу о трёх простых способах экономить время в повседневной жизни."
+  },
+  "qwen:ru:dylan": {
+   "file": "qwen_ru_dylan.mp3",
+   "sha256": "869fbdc7744ab9969b1253eb3526faa1be886581775facd6dd5d96f73fcd6de1",
+   "cau": "Вечер у моря был тихим, а волны медленно накатывали на берег."
+  },
+  "qwen:ru:eric": {
+   "file": "qwen_ru_eric.mp3",
+   "sha256": "35f6d47a473ef3a968925366e8e2c770bd2dc4559c11f140bb0649e94b052a5f",
+   "cau": "Здравствуйте! Сегодня я расскажу о трёх простых способах экономить время в повседневной жизни."
+  },
+  "qwen:pt:ryan": {
+   "file": "qwen_pt_ryan.mp3",
+   "sha256": "84088e8a05cf68ae393704bd7e03c6cd656ad344651737885a730dee96469480",
+   "cau": "Bom dia a todos. Hoje vou mostrar três maneiras simples de economizar tempo no dia a dia."
+  },
+  "qwen:pt:aiden": {
+   "file": "qwen_pt_aiden.mp3",
+   "sha256": "2dcdfb60dfd2996c637fade5d0ef07f1afcd6ddded3dab6f142f06e2d264fb2e",
+   "cau": "A noite à beira-mar era calma, e as ondas chegavam devagar à praia."
+  },
+  "qwen:pt:ono_anna": {
+   "file": "qwen_pt_ono_anna.mp3",
+   "sha256": "74114c2841bf8793775c4f62747c6100e7ad927197954bda1d7abb2581eefe6f",
+   "cau": "Bom dia a todos. Hoje vou mostrar três maneiras simples de economizar tempo no dia a dia."
+  },
+  "qwen:pt:sohee": {
+   "file": "qwen_pt_sohee.mp3",
+   "sha256": "132bd49a28d0c70e713a2283307acc0552245786f8f661f0739889ec823a4dc3",
+   "cau": "A noite à beira-mar era calma, e as ondas chegavam devagar à praia."
+  },
+  "qwen:pt:vivian": {
+   "file": "qwen_pt_vivian.mp3",
+   "sha256": "f3bf286df290a18dfa7a06ecb66a5ef61581505c8253ac562f384bc8abf80ae2",
+   "cau": "Bom dia a todos. Hoje vou mostrar três maneiras simples de economizar tempo no dia a dia."
+  },
+  "qwen:pt:serena": {
+   "file": "qwen_pt_serena.mp3",
+   "sha256": "d418119d4f8930ea88f2113b8814ce65479b626b7c4f9d97906f1d4e2ca122bb",
+   "cau": "A noite à beira-mar era calma, e as ondas chegavam devagar à praia."
+  },
+  "qwen:pt:uncle_fu": {
+   "file": "qwen_pt_uncle_fu.mp3",
+   "sha256": "2984524e767fe5efbbd67ffa986e3f98453dc9d5bb3107c4fa69b142e23a1d5c",
+   "cau": "Bom dia a todos. Hoje vou mostrar três maneiras simples de economizar tempo no dia a dia."
+  },
+  "qwen:pt:dylan": {
+   "file": "qwen_pt_dylan.mp3",
+   "sha256": "10032a140cf05358289c8d5f5b3d2c8dce1e3c128a30d9565ec3c3d851cba909",
+   "cau": "A noite à beira-mar era calma, e as ondas chegavam devagar à praia."
+  },
+  "qwen:pt:eric": {
+   "file": "qwen_pt_eric.mp3",
+   "sha256": "c198fe31c73634065230678f8a98be6d7819f18d4f61b4f589b9eb6113f50608",
+   "cau": "Bom dia a todos. Hoje vou mostrar três maneiras simples de economizar tempo no dia a dia."
+  },
+  "qwen:es:ryan": {
+   "file": "qwen_es_ryan.mp3",
+   "sha256": "2fec5ea37735349868daaee08a5d240e6a127f52bcc048810e9b6d012e991a85",
+   "cau": "Buenos días a todos. Hoy les voy a mostrar tres formas sencillas de ahorrar tiempo en el día a día."
+  },
+  "qwen:es:aiden": {
+   "file": "qwen_es_aiden.mp3",
+   "sha256": "59b5a765a9f3074798fdc530f40b72ac91ae3d70276357e4995d2185b37b5951",
+   "cau": "La tarde junto al mar estaba tranquila, y las olas llegaban despacio a la orilla."
+  },
+  "qwen:es:ono_anna": {
+   "file": "qwen_es_ono_anna.mp3",
+   "sha256": "7a73893375390e08c4d55f574af000cb42233284a948c08037a3c512a024edec",
+   "cau": "Buenos días a todos. Hoy les voy a mostrar tres formas sencillas de ahorrar tiempo en el día a día."
+  },
+  "qwen:es:sohee": {
+   "file": "qwen_es_sohee.mp3",
+   "sha256": "d4ea044732a01111c1eff86246a57c684b9113ea89bef684286f05f596eab966",
+   "cau": "La tarde junto al mar estaba tranquila, y las olas llegaban despacio a la orilla."
+  },
+  "qwen:es:vivian": {
+   "file": "qwen_es_vivian.mp3",
+   "sha256": "71bdf978e28aa10fba216761ebe1e83a651187b9b9b893d263d17e8f1f47917d",
+   "cau": "Buenos días a todos. Hoy les voy a mostrar tres formas sencillas de ahorrar tiempo en el día a día."
+  },
+  "qwen:es:serena": {
+   "file": "qwen_es_serena.mp3",
+   "sha256": "5daf2eb3ba18e32eb8a4fc2f576fdada9636e9a8b92db46f72233d915d235799",
+   "cau": "La tarde junto al mar estaba tranquila, y las olas llegaban despacio a la orilla."
+  },
+  "qwen:es:uncle_fu": {
+   "file": "qwen_es_uncle_fu.mp3",
+   "sha256": "c28ae1178a64c37aa38f4f69f4865899f12b81f844f679c2f94a71eb138c56ea",
+   "cau": "Buenos días a todos. Hoy les voy a mostrar tres formas sencillas de ahorrar tiempo en el día a día."
+  },
+  "qwen:es:dylan": {
+   "file": "qwen_es_dylan.mp3",
+   "sha256": "9521f2e9be6f44b6119aafb2c2380fe61e7ee3a14e3b79e1ebcf99441e9d8e6a",
+   "cau": "La tarde junto al mar estaba tranquila, y las olas llegaban despacio a la orilla."
+  },
+  "qwen:it:ryan": {
+   "file": "qwen_it_ryan.mp3",
+   "sha256": "d95990caadfb6f742c6c45c3a6432e16c345b909201fcf5c53e4012a3149cb8c",
+   "cau": "Buongiorno a tutti. Oggi vi mostro tre modi semplici per risparmiare tempo ogni giorno."
+  },
+  "qwen:it:aiden": {
+   "file": "qwen_it_aiden.mp3",
+   "sha256": "c5d393b744bdb0e495a5d6cb830acf28daeeff2f89e1fc1a74ed9fcda416ab3b",
+   "cau": "La sera al mare era tranquilla, e le onde arrivavano lentamente sulla spiaggia."
+  },
+  "qwen:it:ono_anna": {
+   "file": "qwen_it_ono_anna.mp3",
+   "sha256": "2550c008a5180ac30c8749293d75f3e64a37885adf44e5023143e4a275870ee2",
+   "cau": "Buongiorno a tutti. Oggi vi mostro tre modi semplici per risparmiare tempo ogni giorno."
+  },
+  "qwen:it:sohee": {
+   "file": "qwen_it_sohee.mp3",
+   "sha256": "d6ddc734477d1c52bb41dc4dd7592ece320c90186b01c33ef79f50cb15648fa7",
+   "cau": "La sera al mare era tranquilla, e le onde arrivavano lentamente sulla spiaggia."
+  },
+  "qwen:it:vivian": {
+   "file": "qwen_it_vivian.mp3",
+   "sha256": "afd3e13f78450b1fd5744fc3fb295bf52787eecaa2260e43acd36160b4afa253",
+   "cau": "Buongiorno a tutti. Oggi vi mostro tre modi semplici per risparmiare tempo ogni giorno."
+  },
+  "qwen:it:serena": {
+   "file": "qwen_it_serena.mp3",
+   "sha256": "43960e72c3688a6ecffeefde21868ac332dafab6aa2bb253eec6a653ed181ca3",
+   "cau": "La sera al mare era tranquilla, e le onde arrivavano lentamente sulla spiaggia."
+  },
+  "qwen:it:uncle_fu": {
+   "file": "qwen_it_uncle_fu.mp3",
+   "sha256": "ee5c110f90c7a77e281f23a26b3931539de0f5b832a99e7fca1ad95f510234cf",
+   "cau": "Buongiorno a tutti. Oggi vi mostro tre modi semplici per risparmiare tempo ogni giorno."
+  },
+  "qwen:it:dylan": {
+   "file": "qwen_it_dylan.mp3",
+   "sha256": "349304540abe9d5c0c74635e6941c3033d56d46b03e8504070d5b04b6d720632",
+   "cau": "La sera al mare era tranquilla, e le onde arrivavano lentamente sulla spiaggia."
+  },
+  "qwen:it:eric": {
+   "file": "qwen_it_eric.mp3",
+   "sha256": "bec1b7af71bcc0eab5fcfd9e6787c1e160ec4d68c946f472f21ec4e862786412",
+   "cau": "Buongiorno a tutti. Oggi vi mostro tre modi semplici per risparmiare tempo ogni giorno."
+  },
+  "qwen:es:eric": {
+   "file": "qwen_es_eric.mp3",
+   "sha256": "176f66671e289e28c39379795b73f00cc055514e69e1c96751be6def09a09fa6",
+   "cau": "Buenos días a todos. Hoy les voy a mostrar tres formas sencillas de ahorrar tiempo en el día a día."
+  }
+ }
+}

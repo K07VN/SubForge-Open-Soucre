@@ -1,0 +1,2 @@
+# Netscape HTTP Cookie File
+# No cookies are shipped in this public source repository.

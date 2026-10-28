@@ -1,0 +1,74 @@
+<!--
+  ICON ỨNG DỤNG SubForge Pro — tia chớp của thương hiệu trên ô bo góc.
+
+  ============================ TỶ LỆ VÀNG (φ = 1,618034) ============================
+  Mọi kích thước suy ra từ cạnh ô S = 512 chia luỹ thừa của φ, không có số nào đặt
+  bằng mắt:
+
+      bo góc            r = S / φ³   = 120,87
+      bề ngang tia chớp W = S / φ    = 316,43   → lề ~19% mỗi bên
+      mốc chuyển sắc nền  = 1 / φ²   = 0,382
+      điểm sáng           = (0,382 · 0,382)     (= 1/φ² cả hai trục)
+      quầng xanh          = (0,809 · 0,809)     (= φ/2 cả hai trục, đối xứng qua tâm)
+
+  ====================== CĂN CHO MẮT, KHÔNG PHẢI CHO THƯỚC ======================
+  Đây là chỗ bản trước làm sai và người dùng nhìn ra ngay ("icon cứ bị lệch").
+
+  Đo thật (scratch/do_trong_tam.mjs — dựng tia chớp một mình rồi cộng theo điểm ảnh):
+  TRỌNG TÂM của nó nằm CAO HƠN tâm khung bao 11,7% chiều cao và lệch phải 1,4%.
+  Nghĩa là căn khung bao cho lề đều tăm tắp (49/49 · 53/53 px ở cỡ 256) thì mắt vẫn
+  thấy hình dồn lên trên — vì mắt cân theo KHỐI LƯỢNG chứ không theo mép.
+
+  Nhưng căn đúng trọng tâm thì lại quá đà (hình tụt hẳn xuống, lề trên 71 / dưới 35):
+  hình thon dần về đuôi nên mắt vẫn còn cân một phần theo mép. Nên lấy ĐIỂM GIỮA của
+  hai cách — kết quả ở cỡ 256 là lề trên 62 / dưới 44, và đó là bản nhìn cân nhất
+  trong ba bản dựng ra để so (scratch/so-3-cach.png).
+
+      transform = translate(94,90 122,74) scale(6,6548)
+
+  ============================== BỐN RÀNG BUỘC ==============================
+   1. Đọc được ở 16px (khay hệ thống, thanh tác vụ) → một khối đặc, không chữ,
+      không nét mảnh.
+   2. Tương phản mạnh → tia chớp trắng đặc trên nền tím đậm.
+   3. Chừa lề vì Windows bo góc và đổ bóng quanh icon.
+   4. Có VIỀN KÍNH mảnh: nền tím đậm đặt trên thanh tác vụ màu sáng thì mép ô chìm
+      vào nền, nhìn như hình bị cắt. Viền 0,22 trắng + vệt sáng ở mép trên tách ô ra
+      khỏi nền mà không làm nặng hình ở cỡ nhỏ.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+    <defs>
+        <linearGradient id="nen" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#B36BFF" />
+            <stop offset="0.382" stop-color="#7E14FF" />
+            <stop offset="1" stop-color="#3B1076" />
+        </linearGradient>
+        <radialGradient id="quang" cx="0.809" cy="0.809" r="0.618">
+            <stop offset="0" stop-color="#47BFFF" stop-opacity="0.6" />
+            <stop offset="1" stop-color="#47BFFF" stop-opacity="0" />
+        </radialGradient>
+        <radialGradient id="sang" cx="0.382" cy="0.382" r="0.618">
+            <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.3" />
+            <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+        </radialGradient>
+        <filter id="bong" x="-30%" y="-30%" width="160%" height="160%">
+            <feDropShadow dx="0" dy="9.33" stdDeviation="12.66" flood-color="#2E1065"
+                flood-opacity="0.45" />
+        </filter>
+    </defs>
+
+    <rect width="512" height="512" rx="120.87" fill="url(#nen)" />
+    <rect width="512" height="512" rx="120.87" fill="url(#quang)" />
+    <rect width="512" height="512" rx="120.87" fill="url(#sang)" />
+
+    <!-- Viền kính + vệt sáng mép trên (xem ràng buộc 4). -->
+    <rect x="2" y="2" width="508" height="508" rx="118.87" fill="none" stroke="#FFFFFF"
+        stroke-opacity="0.22" stroke-width="3" />
+    <path d="M 120.87 3 H 391.13 A 120.87 120.87 0 0 1 509 120.87" fill="none"
+        stroke="#FFFFFF" stroke-opacity="0.38" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Tia chớp: path nguyên bản từ frontend/public/favicon.svg. -->
+    <g filter="url(#bong)" transform="translate(94.90 122.74) scale(6.6548)">
+        <path fill="#FFFFFF"
+            d="M25.946 44.938c-.664.845-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.287c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.497 0-3.578-1.842-3.578H1.237c-.92 0-1.456-1.04-.92-1.788L10.013.474c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.579 1.842 3.579h11.377c.943 0 1.473 1.088.89 1.83L25.947 44.94z" />
+    </g>
+</svg>

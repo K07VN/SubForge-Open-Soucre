@@ -1,4 +1,4 @@
-// NEW local source-build entry. Main/preload and the built UI are recovered code.
+// Desktop entry point with network restrictions.
 const { app, session, shell } = require("electron");
 const path = require("path");
 const fs = require("fs");
@@ -20,12 +20,12 @@ function localUrl(value) {
 const originalFetch = global.fetch;
 global.fetch = (url, options) => {
     const value = typeof url === "string" || url instanceof URL ? url : url.url;
-    if (!localUrl(value)) return Promise.reject(new Error("Bản local không gọi dịch vụ Internet."));
+    if (!localUrl(value)) return Promise.reject(new Error("Kết nối Internet đã bị tắt."));
     return originalFetch(url, options);
 };
 const originalOpen = shell.openExternal.bind(shell);
 shell.openExternal = (url, ...args) => {
-    if (!localUrl(url)) return Promise.reject(new Error("Bản local không mở dịch vụ bên ngoài."));
+    if (!localUrl(url)) return Promise.reject(new Error("Không thể mở dịch vụ bên ngoài khi kết nối Internet đã bị tắt."));
     return originalOpen(url, ...args);
 };
 
@@ -43,7 +43,7 @@ if (process.env.SUBFORGE_LOCAL_VERIFY_UI === "1") {
             if (!contents.getURL().endsWith("/index.html")) return;
             await new Promise(resolve => setTimeout(resolve, 5000));
             try {
-                const report = await contents.executeJavaScript(`({ title: document.title, url: location.href, text: document.body.innerText, localBanner: document.body.innerText.includes("SubForge Local"), errors: window.__localErrors || [] })`);
+                const report = await contents.executeJavaScript(`({ title: document.title, url: location.href, text: document.body.innerText, aiStatus: document.body.innerText.includes("SubForge · Trạng thái AI"), errors: window.__localErrors || [] })`);
                 const out = path.join(root, "local-data/logs/checks");
                 fs.mkdirSync(out, { recursive: true });
                 fs.writeFileSync(path.join(out, "desktop-ui.json"), JSON.stringify(report, null, 2));

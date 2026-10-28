@@ -1,8 +1,8 @@
 {
-  "name": "subforge-local-recovered",
+  "name": "subforge",
   "version": "2.15.14",
   "private": true,
-  "description": "Recovered desktop application with local AI adapters",
+  "description": "AI video translation, subtitles and dubbing",
   "main": "desktop/local-main.js",
   "devDependencies": {
     "electron": "30.5.1"

@@ -1,49 +1,40 @@
-# SubForge Open Source
+<div align="center">
 
-Mã khôi phục SubForge với adapter AI local. Runtime/model tải riêng từ [Releases](https://github.com/K07VN/SubForge-Open-Soucre/releases/tag/local-data-2026-10-28); không nằm trong lịch sử Git. Không kèm script setup, launcher hay bản build sẵn.
+# SubForge
 
-## Cấu trúc
+Dịch video · Tạo phụ đề · Lồng tiếng bằng AI
 
-```text
-backend/          Python backend và adapter AI local
-desktop/          Electron main/preload, IPC
-frontend/src/     JavaScript và CSS khôi phục để chỉnh sửa
-frontend/public/  Font, icon và tài nguyên
-frontend/index.html
-package.json / package-lock.json
-requirements-runtime.txt / requirements-torch-cpu.txt
-```
+[**Tải xuống**](https://github.com/K07VN/SubForge-Open-Soucre/releases) · [Cài đặt](#cài-đặt) · [Chạy ứng dụng](#chạy-ứng-dụng)
 
-`frontend/src/app.js` là JavaScript đã format từ bundle, còn chứa React và dependency gộp. Không có source map, TSX/JSX hay cây component gốc. Việc tổ chức lại thành src không được nhận là đã khôi phục nguyên bản TSX. Python khôi phục cũng không có đủ comment/format ban đầu. Native DLL/PYD, executable và trọng số AI được cung cấp riêng; không dùng `.marshal`/`.pyz` để chạy ứng dụng.
+</div>
 
-## 1. Chuẩn bị và lấy runtime
+## Yêu cầu
 
-Cần Windows x64, Node.js LTS/npm, 7-Zip và Internet để tải lần đầu. Tải **đủ** `SubForge-Local-Data.7z.001` đến phần cuối trong Releases, đặt chúng cùng thư mục, rồi dùng 7-Zip giải nén phần `.001` vào **gốc repo**. Có thể kiểm tra hash từng phần bằng:
+Windows 64-bit, [Node.js LTS](https://nodejs.org/) và [7-Zip](https://www.7-zip.org/). Cần Internet để tải tài nguyên và cài Electron lần đầu.
 
-```powershell
-Get-FileHash 'C:\Downloads\SubForge-Local-Data.7z.001' -Algorithm SHA256
-```
+## Tải xuống
 
-So sánh với file `SHA256SUMS.txt` trong Releases. Giữ nguyên tên và tải đủ mọi phần. Sau giải nén phải có:
+| Gói | Nội dung | Khi nào cần |
+| --- | --- | --- |
+| [Bộ đầy đủ · 12,96 GB](https://github.com/K07VN/SubForge-Open-Soucre/releases/tag/local-data-2026-10-28) | Runtime và toàn bộ model AI | Cài đặt lần đầu |
+| [Runtime · 2,71 GB](https://github.com/K07VN/SubForge-Open-Soucre/releases/tag/runtime-2026-10-28) | Python, CUDA, llama.cpp, Qwen, FFmpeg, OCR và thư viện | Đã có model, cần bổ sung runtime |
 
-```text
-local-data/runtime/python312/python.exe
-local-data/runtime/llama-cpp/llama-server.exe
-local-data/runtime/cuda-pascal/
-local-data/data/ai_models/
-runtime/backend/_internal/
-runtime/backend/qwen_bin/
-backend/assets/jsruntime/
-```
+Tải đủ các phần `.001`, `.002`, … của **một gói**, đặt cùng thư mục rồi dùng 7-Zip giải nén phần `.001` vào gốc dự án. Kiểm tra hash bằng `SHA256SUMS.txt` đi kèm. Bộ đầy đủ cần khoảng 20 GB trống để giải nén, ngoài dung lượng các phần đã tải.
 
-Gói gồm Python portable, model, CPU/CUDA và Qwen runtime; không chứa database, cấu hình, dự án, giọng cá nhân, token, cache hay log của máy đóng gói. Cấu hình/dữ liệu mới được tạo khi chạy. Cần khoảng 20 GB trống để giải nén, ngoài các phần nén đã tải.
-
-## 2. Cài Electron và dựng giao diện
-
-Mở PowerShell tại gốc repo:
+## Cài đặt
 
 ```powershell
+git clone https://github.com/K07VN/SubForge-Open-Soucre.git
+cd SubForge-Open-Soucre
 npm.cmd ci --no-audit --no-fund
+```
+
+Giải nén gói tài nguyên vào đây. Sau đó chuẩn bị giao diện:
+
+<details>
+<summary><strong>Lệnh dựng giao diện</strong></summary>
+
+```powershell
 New-Item -ItemType Directory -Path .\frontend\dist\assets -Force | Out-Null
 Copy-Item .\frontend\public\* .\frontend\dist -Recurse -Force
 Copy-Item .\frontend\src\app.js .\frontend\dist\assets\app.js -Force
@@ -54,61 +45,69 @@ $html = $html.Replace('./src/app.js', './assets/app.js').Replace('./src/styles.c
 [IO.File]::WriteAllText((Join-Path (Get-Location) 'frontend\dist\index.html'), $html, [Text.UTF8Encoding]::new($false))
 ```
 
-`dist/` là đầu ra tự sinh, không đưa lên Git. Chạy lại các lệnh copy sau khi sửa frontend. Giữ `public/` để có đủ font và icon.
+Chạy lại khi thay đổi mã giao diện.
 
-## 3. Chạy local
+</details>
 
-Mở **3 cửa sổ PowerShell**, cùng đứng tại gốc repo. Khởi động theo thứ tự:
+## Chạy ứng dụng
 
-**Cửa sổ 1 — LLM local:**
+Mở ba cửa sổ PowerShell tại gốc dự án, chạy lần lượt:
+
+**1. Máy chủ AI**
 
 ```powershell
-& .\local-data\runtime\llama-cpp\llama-server.exe -m .\local-data\data\ai_models\llm\qwen2.5-3b-instruct-q4_k_m.gguf --host 127.0.0.1 --port 18081 --alias subforge-local -c 32768 -ngl 0 --jinja
+& .\local-data\runtime\llama-cpp\llama-server.exe -m .\local-data\data\ai_models\llm\qwen2.5-3b-instruct-q4_k_m.gguf --host 127.0.0.1 --port 18081 --alias subforge -c 32768 -ngl 0 --jinja
 ```
 
-Đợi server báo sẵn sàng. LLM này chạy CPU; model AI khác có thể dùng CUDA.
-
-**Cửa sổ 2 — backend:**
+**2. Backend** — đợi máy chủ AI sẵn sàng trước khi chạy.
 
 ```powershell
 $env:SUBFORGE_OFFLINE_ONLY = '1'
 $env:SUBFORGE_LOCAL_LLM_BASE_URL = 'http://127.0.0.1:18081/v1'
-$env:SUBFORGE_LOCAL_LLM_MODEL = 'subforge-local'
+$env:SUBFORGE_LOCAL_LLM_MODEL = 'subforge'
 & .\local-data\runtime\python312\python.exe -I -B .\backend\local_main.py
 ```
 
-Đợi backend sẵn sàng ở `http://127.0.0.1:18080`. Có thể kiểm tra:
-
-```powershell
-Invoke-RestMethod http://127.0.0.1:18080/api/local/status
-```
-
-**Cửa sổ 3 — giao diện desktop:**
+**3. Giao diện** — đợi backend sẵn sàng tại `http://127.0.0.1:18080`.
 
 ```powershell
 npx.cmd --no-install electron .
 ```
 
-Dừng bằng đóng giao diện và Ctrl+C tại hai cửa sổ dịch vụ. Hai cổng 18080/18081 phải trống. Chạy offline sau khi đã tải đủ các phần runtime/model và cài Electron.
+Đóng giao diện và nhấn **Ctrl+C** tại hai cửa sổ dịch vụ để dừng. Sau khi cài đủ tài nguyên, có thể sử dụng không cần Internet.
 
-## GPU và model
+## AI & GPU
 
-Gói đã kèm overlay torch/torchaudio **2.7.1+cu126** có `sm_61`, từng kiểm tra trên GTX 1070. Máy đích cần driver NVIDIA tương thích; không cần CUDA Toolkit để chạy wheel. Qwen3-TTS dùng binary/Vulkan đi kèm. Không cam kết mọi GPU hoặc mọi tác vụ đều chạy nhanh hơn 10–20 lần.
+Qwen2.5 · Whisper Base/Medium/Large-V3 · VieNeu/MOSS · Qwen3-TTS · Demucs · RapidOCR.
 
-Tắt overlay để thử CPU: đặt `$env:SUBFORGE_DISABLE_CUDA_RUNTIME='1'` trong cửa sổ backend trước khi chạy. Nếu đã dùng UI bật ép CPU, cấu hình đó được giữ trong thư mục dữ liệu.
+Runtime kèm PyTorch/torchaudio **2.7.1+cu126**, hỗ trợ GTX 1070/Pascal với kernel `sm_61`. Máy đích cần driver NVIDIA tương thích. LLM mặc định chạy CPU; Qwen3-TTS dùng backend Vulkan đi kèm.
 
-Model gồm Qwen2.5 3B Instruct Q4_K_M, Whisper Base/Medium/Large-V3, VieNeu/MOSS, Qwen3-TTS GGUF, Demucs; OCR ONNX và FFmpeg đi kèm thư viện. Các dịch vụ cloud cũ được chuyển qua adapter local; không có mã nguồn/trọng số DeepSeek hoặc Gemini trong bản phục hồi. Chất lượng/tính năng có thể khác bản cloud.
+Nếu cần dùng CPU, đặt `$env:SUBFORGE_DISABLE_CUDA_RUNTIME='1'` trước khi khởi động backend.
 
-## Cài lại dependency từ upstream — tùy chọn
+## Cấu trúc
 
-Cách đã kiểm tra là dùng gói Releases. Nếu muốn tự dựng runtime Python, cài Python 3.12 x64 và chạy:
+```text
+backend/          API, xử lý video và dịch vụ AI
+desktop/          Electron và IPC
+frontend/src/     JavaScript, CSS
+frontend/public/  Font, icon, tài nguyên
+runtime/          Thư viện và công cụ từ Releases
+local-data/       Python, CUDA, model và dữ liệu ứng dụng
+```
+
+Runtime, model, `node_modules` và `frontend/dist` được Git bỏ qua. Không đưa dữ liệu dự án, cookie hay token vào repository.
+
+<details>
+<summary>Thông tin mã nguồn và dependency</summary>
+
+Giao diện hiện dùng JavaScript từ bundle; không có cây TSX/JSX hoặc source map gốc. Các file native và trọng số AI nằm trong Releases. Không sử dụng `.marshal` hoặc `.pyz` để chạy ứng dụng.
+
+Có thể cài lại dependency Python bằng Python 3.12 x64:
 
 ```powershell
 py -3.12 -m pip install --no-compile --target .\runtime\backend\_internal -r .\requirements-runtime.txt -r .\requirements-torch-cpu.txt
 ```
 
-Lệnh pip không cung cấp Python portable, Qwen executable, QuickJS hoặc các model. Các thành phần đó vẫn cần lấy từ Releases hoặc tự build/tải đúng phiên bản. Torch CPU 2.7.1 và các dependency cài lại có thể khác nguyên byte với runtime vendor; không được nhận là bản binary gốc đã khôi phục.
+Lệnh pip không thay thế Python portable, Qwen executable, QuickJS hoặc model. Giữ các thành phần đó từ Releases.
 
-## Git
-
-`.gitignore` loại `runtime/`, `local-data/`, `node_modules/`, `frontend/dist/`, model, binary và cache. Chỉ push code, assets, lockfile, requirements và README. Không đưa dữ liệu dự án/token cá nhân vào Releases. Media ngoài thư mục ứng dụng phải copy riêng nếu chuyển máy.
+</details>

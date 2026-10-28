@@ -42,6 +42,6 @@ Thumbs.db
 /tools/
 /run_local.py
 
-# Build output; editable recovered code lives in frontend/src.
+# Build output; editable code lives in frontend/src.
 /frontend/dist/
 # Keep backend/assets and frontend/public fonts/resources.

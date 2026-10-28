@@ -6,7 +6,11 @@ Dịch video · Tạo phụ đề · Lồng tiếng bằng AI
 
 [**Tải xuống**](https://github.com/K07VN/SubForge-Open-Soucre/releases) · [Cài đặt](#cài-đặt) · [Chạy ứng dụng](#chạy-ứng-dụng)
 
+[decompile.tnkre.dev](https://decompile.tnkre.dev) · [tnkre.dev](https://tnkre.dev)
+
 </div>
+
+![Giao diện SubForge](.github/assets/subforge.png)
 
 ## Yêu cầu
 
@@ -96,18 +100,3 @@ local-data/       Python, CUDA, model và dữ liệu ứng dụng
 ```
 
 Runtime, model, `node_modules` và `frontend/dist` được Git bỏ qua. Không đưa dữ liệu dự án, cookie hay token vào repository.
-
-<details>
-<summary>Thông tin mã nguồn và dependency</summary>
-
-Giao diện hiện dùng JavaScript từ bundle; không có cây TSX/JSX hoặc source map gốc. Các file native và trọng số AI nằm trong Releases. Không sử dụng `.marshal` hoặc `.pyz` để chạy ứng dụng.
-
-Có thể cài lại dependency Python bằng Python 3.12 x64:
-
-```powershell
-py -3.12 -m pip install --no-compile --target .\runtime\backend\_internal -r .\requirements-runtime.txt -r .\requirements-torch-cpu.txt
-```
-
-Lệnh pip không thay thế Python portable, Qwen executable, QuickJS hoặc model. Giữ các thành phần đó từ Releases.
-
-</details>
